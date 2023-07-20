@@ -1,0 +1,33 @@
+:root {
+  --first_color: #59af5c;
+  --first_bg_color: #cccccc;
+  --second_bg_color: #231f1f;
+  --third_bg_color: #dddddd;
+  --folow: #bc4037;
+  --icons_color: #000000;
+  --delete_account: #ff0007;
+  --p_color: #707070;
+  --font: "Noto Kufi Arabic", sans-serif;
+}
+*,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font);
+}
+body {
+  direction: rtl;
+  overflow-x: hidden;
+  caret-color: var(--first_color);
+}
+body::-webkit-scrollbar,
+.mainbg::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb,
+.mainbg::-webkit-scrollbar-thumb {
+  background: var(--first_color);
+  border-radius: 30px;
+}
