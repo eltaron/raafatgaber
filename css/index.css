@@ -1,33 +1,200 @@
-:root {
-  --first_color: #59af5c;
-  --first_bg_color: #cccccc;
-  --second_bg_color: #231f1f;
-  --third_bg_color: #dddddd;
-  --folow: #bc4037;
-  --icons_color: #000000;
-  --delete_account: #ff0007;
-  --p_color: #707070;
-  --font: "Noto Kufi Arabic", sans-serif;
+section:not(#hero) {
+  margin: var(--margin);
 }
-*,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: var(--font);
+/* hero */
+#hero .carousel-item {
+  height: 89vh;
 }
-body {
-  direction: rtl;
-  overflow-x: hidden;
-  caret-color: var(--first_color);
+#hero .carousel-item img {
+  height: 100%;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
 }
-body::-webkit-scrollbar,
-.mainbg::-webkit-scrollbar {
-  background-color: transparent;
-  width: 10px;
+#hero .carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: var(--colorfour);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+#hero .carousel-caption {
+  bottom: 33%;
+  background-color: var(--second_bg_color);
+  padding: 60px 0;
+}
+#hero .carousel-control-next-icon,
+#hero .carousel-control-prev-icon {
+  filter: none;
+  width: 60px;
+  height: 60px;
+}
+#hero .carousel-control-next-icon {
+  background-image: url("../images/icons/right-arrow.png");
+}
+#hero .carousel-control-prev-icon {
+  background-image: url("../images/icons/left-arrow.png");
+}
+#hero .carousel-caption h5 {
+  color: var(--first_color);
+  font-weight: bold;
+  font-size: 25px;
+  margin: 16px 0;
+}
+#hero .carousel-caption p {
+  color: var(--main_p);
+}
+/* about */
+#about .row h2 {
+  font-size: 40px;
+}
+#about .row h2,
+#about .row p {
+  margin-bottom: 20px;
+}
+#about .row p {
+  color: var(--main_p);
+  font-size: 23px;
+}
+#about .row p,
+#about .row h4,
+#about .row ul {
+  margin-right: 46px;
+}
+#about .row i {
+  color: var(--colorfour);
+}
+#about .row h2,
+#about .row h4 {
+  color: var(--first_color);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#about .row ul li {
+  font-size: 20px;
+  color: var(--main_p);
+  margin-bottom: 10px;
+}
+/* videos */
+#freevideos {
+  background-color: var(--second_bg_color);
+  padding: 40px 0;
+}
+#freevideos .imgcontainer {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  filter: grayscale(1);
+  transition: 0.6s;
+  margin: 10px 0;
+}
+.imgcontainer .text {
+  position: absolute;
+  bottom: -220px;
+  background: var(--colortwo);
+  width: 100%;
+  padding: 12px;
+  transition: 0.7s ease-in-out;
+  text-align: center;
+}
+.imgcontainer img {
+  height: 560px;
+}
+.imgcontainer .text h3 {
+  color: var(--first_color);
+  font-size: 33px;
+}
+.imgcontainer .text p {
+  color: var(--main_p);
+  font-size: 20px;
+}
+.imgcontainer:hover .text {
+  bottom: 0px;
 }
 
-body::-webkit-scrollbar-thumb,
-.mainbg::-webkit-scrollbar-thumb {
+.imgcontainer:hover {
+  filter: grayscale(0) !important;
+}
+/* free articles */
+#freearticles .container img {
+  width: 100%;
+}
+#freearticles .container .row .col-lg-6 {
+  padding: 0;
+}
+#freearticles .container .row .d-flex {
+  padding: 40px;
+}
+#freearticles .container p {
+  font-size: 21px;
+  color: var(--main_p);
+  line-height: 2;
+  margin: 20px 0;
+}
+#freearticles .container h3 {
+  color: var(--first_color);
+  font-weight: bold;
+}
+#freearticles img {
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.5s ease-in-out;
+}
+#freearticles .row:hover img {
+  transform: translateY(-6px);
+  box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+}
+#freearticles .container a {
+  font-size: 18px;
+}
+/* studients */
+#studients {
+  /* background-color: var(--second_bg_color); */
+  padding: 40px 0;
+}
+#studients #wrapper {
+  width: 100%;
+  position: relative;
+  direction: ltr;
+  margin: auto;
+}
+#studients .item {
+  width: 200px;
+  height: 200px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#studients #carousel {
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+#studients #carousel::-webkit-scrollbar {
+  height: 0;
+}
+#studients #prev,
+#studients #next {
+  justify-content: center;
   background: var(--first_color);
-  border-radius: 30px;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  outline: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+#studients #prev {
+  left: 40px;
+  display: none;
+}
+#studients #next {
+  right: 40px;
+}
+#studients #content {
+  display: grid;
+  grid-gap: 25px;
+  grid-auto-flow: column;
+  margin: auto;
+  box-sizing: border-box;
 }

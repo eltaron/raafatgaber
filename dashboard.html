@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dashboard</title>
+    <meta name="theme-color" content="#fcc464" />
+    <meta name="msapplication-navbutton-color" content="#59af5c" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#59af5c" />
+    <!-- <meta
+      name="description"
+      content="كرين creen  هو افضل واجمل تجمع رياضي أمن  وصحي تمارين وتغذية صحية لحياة صحية امنة تواصل مع مدرب او مدربة مجانا انشئ  مجموعة أصدقاء شارك تمارينك ووجباتك الغذائية"
+    />
+    <meta
+      name="keywords"
+      content="كرين,برامج كرين,موقع كرين,تخسيس,دايت,انقاص الوزن,الصحة,الصحة والجمال,برنامج كرين,"
+    /> -->
+    <meta name="author" content="Ahmed Eltaroun ( Master code )" />
+    <meta name="MobileOptimized" content="320" />
+    <meta property="og:title" content="الرئيسية" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://raafatgaber.com" />
+    <meta property="og:image" content="" />
+    <!-- <meta
+      property="og:description"
+      content="كرين creen  هو افضل واجمل تجمع رياضي أمن  وصحي تمارين وتغذية صحية لحياة صحية امنة تواصل مع مدرب او مدربة مجانا انشئ  مجموعة أصدقاء شارك تمارينك ووجباتك الغذائية"
+    /> -->
+    <meta property="og:site_name" content="raafatgaber" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link
+      rel="shortcut icon"
+      type="image/png"
+      href="https://creen-program.com/web/images/favicon.png"
+    /> -->
+    <!-- css files -->
+    <link rel="stylesheet" href="assets/bootstrab/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="css/dash.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <!-- header  -->
+    <div class="header" id="#">
+      <div class="container">
+        <div class="header-top">
+          <div class="logo">
+            <img src="../raafatgaber/images/logo.png" alt="" />
+          </div>
+          <div class="links">
+            <ul id="sidemenu">
+              <li><a class="link" href=""> الرئيسية</a></li>
+              <li><a class="link" href="">تواصل معنا</a></li>
+            </ul>
+          </div>
+          <div class="btn-group dropdown">
+            <button
+              type="button"
+              class="btn"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item">
+                <a class="dropdown-item" href="#">الرئيسية</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li class="dropdown-item">
+                <a class="dropdown-item" href="#">تواصل معنا</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class="main-title">لوحة التحكم</h2>
+    <section class="section11 mt-5 pt-4">
+      <div class="row m-2 m-md-5">
+        <div class="col-md-12 col-lg-3 main_bg rightMainNav">
+          <div
+            class="nav flex-column nav-pills text-center"
+            id="v-pills-tab"
+            role="tablist"
+            aria-orientation="vertical"
+          >
+            <div class="main">
+              <h2 class="mt-0">المحتوى الدراسى</h2>
+              <p class="font-weight-light">الصف الاول الثانوى</p>
+            </div>
+            <a
+              onclick="show('one',this.id)"
+              class="nav-link active"
+              id="v-pills-home-tab"
+              data-toggle="pill"
+              role="tab"
+              aria-controls="v-pills-home"
+              aria-selected="true"
+            >
+              <i class="fa-solid fa-check"></i> وحدات المنهج</a
+            >
+            <a
+              onclick="show('two',this.id)"
+              class="nav-link"
+              id="v-pills-exercies-tab"
+              data-toggle="pill"
+              role="tab"
+              aria-controls="v-pills-exercies"
+              aria-selected="false"
+              ><i class="fa-solid fa-check"></i>
+              تمارين
+            </a>
+            <a
+              onclick="show('three',this.id)"
+              class="nav-link"
+              id="v-pills-messages-tab"
+              data-toggle="pill"
+              role="tab"
+              aria-controls="v-pills-messages"
+              aria-selected="false"
+              ><i class="fa-solid fa-check"></i> الامتحانات الشاملة</a
+            >
+            <a
+              onclick="show('four',this.id)"
+              class="nav-link"
+              id="v-pills-records-tab"
+              data-toggle="pill"
+              role="tab"
+              aria-controls="v-pills-records"
+              aria-selected="false"
+              ><i class="fa-solid fa-check"></i> الصوتيات</a
+            >
+            <a
+              onclick="show('five',this.id)"
+              class="nav-link"
+              id="v-pills-books-tab"
+              data-toggle="pill"
+              role="tab"
+              aria-controls="v-pills-books"
+              aria-selected="false"
+              ><i class="fa-solid fa-check"></i>
+              الملخصات
+            </a>
+            <a
+              onclick="show('six',this.id)"
+              class="nav-link"
+              id="v-pills-settings-tab"
+              data-toggle="pill"
+              role="tab"
+              aria-controls="v-pills-settings"
+              aria-selected="false"
+              ><i class="fa-solid fa-check"></i> البث المباشر</a
+            >
+            <a
+              onclick="show('seven',this.id)"
+              class="nav-link"
+              id="v-pills-quotes-tab"
+              data-toggle="pill"
+              role="tab"
+              aria-controls="v-pills-quotes"
+              aria-selected="false"
+              ><i class="fa-solid fa-check"></i> اقتباسات ونصائح يومية</a
+            >
+          </div>
+        </div>
+        <!-- slides -->
+        <div class="z one col-md-12 col-lg-9 pr-0 pr-md-3 pl-0 slides">
+          <div
+          id="carouselExampleDark"
+          class=" carousel carousel-dark slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="images/رأفت جابر (4).png" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="mb-4">الذهاب للكورس</h5>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="images/رأفت جابر (5).png" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="mb-4">الذهاب للكورس</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/رأفت جابر (6).png" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="mb-4">الذهاب للكورس</h5>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        </div>
+        <div class="two col-md-12 col-lg-9 pr-0 pr-md-3 pl-0">
+          <div class="tab-content main_bg leftMainNav" id="v-pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="v-pills-home"
+              role="tabpanel"
+              aria-labelledby="v-pills-home-tab"
+            >
+              <h2 class="text-right">تمارين</h2>
+              <div class="row text-right">
+                <div class="col-lg-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">الوحدة الاولي</h4>
+                      <p class="card-text">الوحدة الاولي</p>
+                      <h6 class="text-start">منذ سنة</h6>
+                      <a href="">الذهاب للكورس</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">الوحدة الثانية</h4>
+                      <p class="card-text">الوحدة الثانية</p>
+                      <h6 class="text-start">منذ سنة</h6>
+                      <a href="">الذهاب للكورس</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">الوحدة الثالثة</h4>
+                      <p class="card-text">الوحدة الثالثة</p>
+                      <h6 class="text-start">منذ سنة</h6>
+                      <a href="">الذهاب للكورس</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">دروس عامة</h4>
+                      <p class="card-text">قسم يحتوي علي دروس متنوعة</p>
+                      <h6 class="text-start">منذ سنة</h6>
+                      <a href="">الذهاب للكورس</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="wave">
+      <h2 class="ve"></h2>
+    </div>
+    <style>
+      .one,
+      .two {
+        display: none;
+      }
+      .z {
+        display: block !important;
+      }
+    </style>
+    <script>
+      function show(s, d) {
+        document.getElementsByClassName("z")[0].classList.remove("z");
+        document.getElementsByClassName(s)[0].classList.add("z");
+        document.getElementsByClassName("active")[0].classList.remove("active");
+        document.getElementById(d).classList.add("active");
+      }
+    </script>
+    <script src="../raafatgaber/assets/bootstrab/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

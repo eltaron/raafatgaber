@@ -1,0 +1,75 @@
+#auth {
+  width: 55%;
+  background-color: #fefffa;
+  text-align: center;
+  padding: 30px;
+  margin: 30px auto;
+}
+@media (max-width: 992px) {
+  #auth {
+    width: 100%;
+  }
+}
+#auth p {
+  font-size: 23px;
+  color: var(--main_p);
+  margin-top: 10px;
+}
+#auth input:not([type="radio"]),
+#auth select,
+#auth textarea {
+  width: 55%;
+  height: 65px;
+  border: none;
+  background-color: var(--colortwo);
+  color: var(--first_color);
+  font-weight: bold;
+  text-align: center;
+}
+
+#auth input::placeholder {
+  color: var(--first_color);
+}
+#auth textarea {
+  height: auto;
+  padding-top: 15px;
+}
+#auth div {
+  margin: 20px 0;
+}
+.original-button {
+  padding: 20px 80px;
+  margin: auto;
+  border: none;
+  background-image: linear-gradient(90deg, #0881a33d, #0881a3);
+  color: #fff;
+  border-radius: 4px;
+  box-shadow: 7px 4px 8px 0px #00000070;
+  transition: transform 0.5s, opacity 0.5s;
+  font-size: 23px;
+  display: inline-block;
+}
+
+.original-button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+#auth a {
+  text-decoration: none;
+  color: var(--first_color);
+  font-weight: bold;
+  transition: color 0.5s ease-in-out;
+}
+#auth a:hover {
+  color: #06637c;
+}
+@media (max-width: 768px) {
+  #auth input:not([type="radio"]),
+  #auth select,
+  #auth textarea {
+    width: 90%;
+  }
+  #auth .original-button {
+    width: 60%;
+  }
+}
