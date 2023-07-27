@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>أستاذ رأفت جابر</title>
+    <meta name="theme-color" content="#0881a3" />
+    <meta name="msapplication-navbutton-color" content="#0881a3" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0881a3" />
+    <meta name="author" content="Ahmed Eltaroun ( Master code )" />
+    <meta name="MobileOptimized" content="320" />
+    <meta property="og:title" content="الرئيسية" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://raafatgaber.com" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="raafatgaber" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <!-- css files -->
+    <link rel="stylesheet" href="assets/bootstrab/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/dash.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img src="images/logo.png" alt="" width="200"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="active" aria-current="page" href="dashboard.html"
+                  >الرئيسية</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="" href="posts.html">المنشورات</a>
+              </li>
+              <li class="nav-item">
+                <a class="" href="articles.html">المقالات </a>
+              </li>
+              <li class="nav-item">
+                <a class="" href="events.html">المهام</a>
+              </li>
+              <li class="nav-item">
+                <a class="" href="profile.html">الحساب الشخصي</a>
+              </li>
+              <li class="nav-item">
+                <a class="" href="login.html">تسجيل الخروج</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="mainbg">
+        <h2 class="text-center">الرئيسية</h2>
+      </section>
+      <section id="main"></section>
+    </main>
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 d-flex align-items-center">
+              <div class="footer-info">
+                <a href="index.html"
+                  ><img src="images/logo.png" alt="" width="200"
+                /></a>
+                <p class="mb-3 mt-3">
+                  <strong>العنوان: </strong> كفر الشيخ <br />
+                </p>
+                <p><strong>الهاتف: </strong> 01062453688<br /></p>
+                <div class="social-links mt-3">
+                  <a href="#" class="youtube"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                  <a href="#" class="facebook"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                  <a href="#" class="whatapp"
+                    ><i class="fa-brands fa-whatsapp"></i
+                  ></a>
+                  <a href="#" class="google-plus"
+                    ><i class="fa-brands fa-skype"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 footer-links">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-angles-left"></i>
+                  <a href="dashboard.html">الرئيسية</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angles-left"></i>
+                  <a href="posts.html">المنشورات</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angles-left"></i>
+                  <a href="articles.html">المقالات</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angles-left"></i>
+                  <a href="events.html">المهام</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angles-left"></i>
+                  <a class="" href="profile.html">الحساب الشخصي</a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-angles-left"></i>
+                  <a class="" href="login.html">تسجيل الخروج</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright" dir="ltr">
+          © Copyright <strong><a href="">MasterCode</a></strong
+          >. All Rights Reserved
+        </div>
+      </div>
+    </footer>
+    <a id="button" class="show" href="#"></a>
+    <script src="assets/bootstrab/bootstrap.bundle.min.js"></script>
+    <script>
+      function show(s, d) {
+        document.getElementsByClassName("z")[0].classList.remove("z");
+        document.getElementsByClassName(s)[0].classList.add("z");
+        document.getElementsByClassName("active")[0].classList.remove("active");
+        document.getElementById(d).classList.add("active");
+      }
+    </script>
+  </body>
+</html>

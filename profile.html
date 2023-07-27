@@ -51,7 +51,7 @@
           >
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="active" aria-current="page" href="dashboard.html"
+                <a class="" aria-current="page" href="dashboard.html"
                   >الرئيسية</a
                 >
               </li>
@@ -65,7 +65,7 @@
                 <a class="" href="events.html">المهام</a>
               </li>
               <li class="nav-item">
-                <a class="" href="profile.html">الحساب الشخصي</a>
+                <a class="active" href="profile.html">الحساب الشخصي</a>
               </li>
               <li class="nav-item">
                 <a class="" href="login.html">تسجيل الخروج</a>
@@ -77,7 +77,7 @@
     </header>
     <main>
       <section id="mainbg">
-        <h2 class="text-center">الرئيسية</h2>
+        <h2 class="text-center">الحساب الشخصي</h2>
       </section>
       <section id="main">
         <div class="row">
@@ -95,8 +95,8 @@
                   alt=""
                   width="200"
                 />
-                <h2>المحتوى الدراسى</h2>
-                <p>الصف الاول الثانوى</p>
+                <h2>احمد محمد جمعة</h2>
+                <p>01066343874</p>
               </div>
               <a
                 class="nav-link active"
@@ -108,7 +108,7 @@
                 aria-controls="nav-home"
                 aria-selected="true"
               >
-                اقسام المنهج</a
+                البيانات الشخصية</a
               >
               <a
                 class="nav-link"
@@ -119,7 +119,7 @@
                 role="tab"
                 aria-controls="nav-exams"
                 aria-selected="false"
-                >الامتحانات الشاملة</a
+                >تعديل الحساب</a
               >
               <a
                 class="nav-link"
@@ -130,7 +130,7 @@
                 role="tab"
                 aria-controls="nav-records"
                 aria-selected="false"
-                >الصوتيات</a
+                >نتائج الامتحانات</a
               >
               <a
                 class="nav-link"
@@ -142,19 +142,8 @@
                 aria-controls="nav-books"
                 aria-selected="false"
               >
-                الملخصات
+                تواصل معنا
               </a>
-              <a
-                class="nav-link"
-                id="nav-lives-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-lives"
-                type="button"
-                role="tab"
-                aria-controls="nav-lives"
-                aria-selected="false"
-                >البث المباشر</a
-              >
             </div>
           </div>
           <!-- slides -->
@@ -169,37 +158,33 @@
               aria-labelledby="nav-home-tab"
             >
               <div class="container">
-                <h2 class="main-title">اقسام المنهج</h2>
-                <div class="row text-right">
-                  <div class="col-lg-6 mb-2">
-                    <div class="card w-100">
-                      <img
-                        src="images/dashboard/1.jpg"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="card-body">
-                        <h4 class="card-title">القصة</h4>
-                        <p class="card-text">قصة طه حسين الايام</p>
-                        <a href="">الذهاب للقسم</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 mb-2">
-                    <div class="card w-100">
-                      <img
-                        src="images/dashboard/2.webp"
-                        class="card-img-top"
-                        alt="..."
-                      />
-                      <div class="card-body">
-                        <h4 class="card-title">النحو</h4>
-                        <p class="card-text">اهم دروس النحو</p>
-                        <a href="">الذهاب للقسم</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <h2 class="main-title">الحساب الشخصى</h2>
+                <form
+                  class="sign"
+                  action="$_SERVER['PHP_SELF'] ?>"
+                  method="POST"
+                >
+                  <label for="name"
+                    ><i class="fa fa-user" aria-hidden="true"></i> اسم
+                    المستخدم</label
+                  >
+                  <input value="ahmed" disabled="" />
+                  <label for="name"
+                    ><i class="fa fa-barcode" aria-hidden="true"></i> الكود
+                    الشخصي</label
+                  >
+                  <input value="ahmed" disabled="" />
+                  <label for="email"
+                    ><i class="fa fa-envelope" aria-hidden="true"></i> البريد
+                    الالكتروني</label
+                  >
+                  <input value="a@a.com" disabled="" />
+                  <label for="phone"
+                    ><i class="fa fa-phone" aria-hidden="true"></i> رقم
+                    الهاتف</label
+                  >
+                  <input value="245454555555" disabled="" />
+                </form>
               </div>
             </div>
             <div
@@ -209,27 +194,22 @@
               aria-labelledby="nav-exams-tab"
             >
               <div class="container">
-                <h2 class="main-title">الامتحانات الشاملة</h2>
-                <div class="table-responsive">
-                  <table class="table table-bordered text-center">
-                    <thead>
-                      <tr>
-                        <th scope="col">الامتحان</th>
-                        <th scope="col">تاريخ الامتحان</th>
-                        <th scope="col">الذهاب الامتحان</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>امتحان شامل 1</td>
-                        <td>منذ 9 أشهر</td>
-                        <td>
-                          <a href="">الذهاب للامتحان</a>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+                <h2 class="main-title">تعديل الحساب</h2>
+                <form class="sign" action="" method="POST">
+                  <label for="name"> اسم المستخدم</label>
+                  <input type="text" name="uname" value="ahmed" />
+                  <label for="password"> كلمة المرور</label>
+                  <input
+                    type="password"
+                    name="password"
+                    placeholder="يرجي ادخال كلمة المرور"
+                  />
+                  <label for="email"> البريد الالكتروني</label>
+                  <input type="email" name="email" value="a@a.com" />
+                  <label for="phone"> رقم الهاتف</label>
+                  <input type="number" name="phone" value="245454555555" />
+                  <button class="original-button" type="submit">تعديل</button>
+                </form>
               </div>
             </div>
             <div
@@ -239,15 +219,44 @@
               aria-labelledby="nav-records-tab"
             >
               <div class="container">
-                <h2 class="main-title">الامتحانات الشاملة</h2>
-                <div class="row text-right">
-                  <div class="col-lg-6 mb-2">
-                    <div class="card w-100">
-                      <div class="card-body text-center">
-                        <h4 class="card-title">القصة</h4>
-                        <audio src="audio.mp3" controls></audio>
-                      </div>
-                    </div>
+                <h2 class="main-title">نتائج الامتحانات</h2>
+                <div class="container">
+                  <div class="table-responsive">
+                    <table class="table table-bordered text-center">
+                      <thead>
+                        <tr>
+                          <th scope="col">الامتحان</th>
+                          <th scope="col">تاريخ اداء الامتحان</th>
+                          <th scope="col">النتيجة</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            امتحان شامل <br />
+                            <span class="badge bg-primary">شامل</span>
+                          </td>
+                          <td>منذ 10 أشهر</td>
+                          <td>20 / 30</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            امتحان جزئي <br />
+                            <span class="badge bg-primary">جزئي</span>
+                          </td>
+                          <td>منذ 11 أشهر</td>
+                          <td>20 / 35</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            امتحان شامل <br />
+                            <span class="badge bg-primary">شامل</span>
+                          </td>
+                          <td>منذ 10 أشهر</td>
+                          <td>8 / 30</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
@@ -258,70 +267,19 @@
               role="tabpanel"
               aria-labelledby="nav-books-tab"
             >
-              <h2 class="main-title">الملخصات</h2>
               <div class="container">
-                <div class="table-responsive">
-                  <table class="table table-bordered text-center">
-                    <thead>
-                      <tr>
-                        <th scope="col">اسم الملخص</th>
-                        <th scope="col">تاريخ الملخص</th>
-                        <th scope="col">الملخص</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>ملخص الإمتحان</td>
-                        <td>منذ 10 أشهر</td>
-                        <td>
-                          <a href="">تحميل</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>إجابات ملخص الإمتحان</td>
-                        <td>منذ 10 أشهر</td>
-                        <td>
-                          <a href="">تحميل</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>ملخص التفوق</td>
-                        <td>منذ 10 أشهر</td>
-                        <td>
-                          <a href="">تحميل</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>إجابات ملخص التفوق</td>
-                        <td>منذ 10 أشهر</td>
-                        <td>
-                          <a href="">تحميل</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>ملخص النفيس</td>
-                        <td>منذ 10 أشهر</td>
-                        <td>
-                          <a href="">تحميل</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>إجابات ملخص النفيس</td>
-                        <td>منذ 10 أشهر</td>
-                        <td>
-                          <a href="">تحميل</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>منصة حصص مصر</td>
-                        <td>منذ 10 أشهر</td>
-                        <td>
-                          <a href="">تحميل</a>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+                <h2 class="main-title">تواصل معنا</h2>
+                <form action="" method="POST">
+                  <textarea
+                    placeholder="كتابة الرسالة"
+                    name="message"
+                    id="message"
+                    class="p-3"
+                    required=""
+                    rows="10"
+                  ></textarea>
+                  <button class="original-button" type="submit">ارسال</button>
+                </form>
               </div>
             </div>
             <div
