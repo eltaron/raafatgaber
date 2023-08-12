@@ -66,7 +66,20 @@ audio {
   width: 100%;
 }
 .card {
-  border: 1px solid #ffd6a4;
+  background-color: var(--second_bg_color);
+  border: none;
+  box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+}
+#main .card .card-title {
+  color: var(--first_color);
+  font-weight: bold;
+  font-size: 28px;
+  margin: 15px 0 20px;
+}
+#main .card .card-title i {
+  display: block;
+  font-size: 40px;
+  margin-bottom: 15px;
 }
 label {
   display: block;

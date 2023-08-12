@@ -25,7 +25,8 @@
     <link rel="stylesheet" href="assets/bootstrab/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/dash.css" />
+    <link rel="stylesheet" href="css/exam.css" />
+    <link rel="stylesheet" href="css/countdown-lights.css" />
   </head>
   <body>
     <header>
@@ -76,10 +77,191 @@
       </nav>
     </header>
     <main>
-      <section id="mainbg">
-        <h2 class="text-center">الرئيسية</h2>
+      <section id="section11" class="section11">
+        <div class="container">
+          <div class="row">
+            <div class="card w-100">
+              <div class="card-header text-center">
+                <h2>اسم الكورس</h2>
+                <h5 class="text-left text-muted">20/3/2020</h5>
+              </div>
+              <div id="demoB" style="width: 100%"></div>
+              <div class="card-body">
+                <form action="#">
+                  <div class="accordion" id="accordionExample">
+                    <div class="card text-right">
+                      <div class="card-header" id="headingOne">
+                        <h5
+                          class="mb-0 d-flex"
+                          style="
+                            justify-content: space-between;
+                            align-items: center;
+                          "
+                        >
+                          <button
+                            class="btn btn-link"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne"
+                            aria-expanded="true"
+                            aria-controls="collapseOne"
+                          >
+                            السؤال الاول
+                          </button>
+                        </h5>
+                      </div>
+                      <div
+                        id="collapseOne"
+                        class="accordion-collapse collapse show"
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="card-body">
+                          <div class="question">
+                            <h4>
+                              <i class="icofont-circled-left"></i>السؤال 1
+                            </h4>
+                            <img
+                              src="images/How_to_become_a_teacher_612px.jpg"
+                              class="mb-4"
+                              width="100%"
+                              height="200"
+                            />
+                            <div class="q">
+                              <input
+                                type="radio"
+                                name="gender"
+                                id="chose1"
+                                value="male"
+                              />
+                              <label for="chose1">اختيار 1</label>
+                            </div>
+                            <div class="q">
+                              <input
+                                type="radio"
+                                name="gender"
+                                id="chose2"
+                                value="male"
+                              />
+                              <label for="chose2">اختيار 1</label>
+                            </div>
+                            <div class="q">
+                              <input
+                                type="radio"
+                                name="gender"
+                                id="chose3"
+                                value="male"
+                              />
+                              <label for="chose3">اختيار 1</label>
+                            </div>
+                            <div class="q">
+                              <input
+                                type="radio"
+                                name="gender"
+                                id="chose4"
+                                value="male"
+                              />
+                              <label for="chose4">اختيار 1</label>
+                            </div>
+                          </div>
+                          <hr />
+                          <div class="question">
+                            <h4>4السؤال</h4>
+                            <input type="text" placeholder="اضافة اجابة" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card text-right">
+                      <div class="card-header" id="headingOne">
+                        <h5
+                          class="mb-0 d-flex"
+                          style="
+                            justify-content: space-between;
+                            align-items: center;
+                          "
+                        >
+                          <button
+                            class="btn btn-link"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo"
+                            aria-expanded="false"
+                            aria-controls="collapseTwo"
+                          >
+                            السؤال الاول
+                          </button>
+                          <span>5 اسئلة</span>
+                        </h5>
+                      </div>
+                      <div
+                        id="collapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="card-body">
+                          <div class="question">
+                            <h4>
+                              <i class="icofont-circled-left"></i> السؤال1
+                            </h4>
+                            <div class="q">
+                              <input
+                                type="radio"
+                                name="gender"
+                                id="chose1"
+                                value="male"
+                              />
+                              <label for="chose1">اختيار 1</label>
+                            </div>
+                            <div class="q">
+                              <input
+                                type="radio"
+                                name="gender"
+                                id="chose2"
+                                value="male"
+                              />
+                              <label for="chose2">اختيار 1</label>
+                            </div>
+                            <div class="q">
+                              <input
+                                type="radio"
+                                name="gender"
+                                id="chose3"
+                                value="male"
+                              />
+                              <label for="chose3">اختيار 1</label>
+                            </div>
+                            <div class="q">
+                              <input
+                                type="radio"
+                                name="gender"
+                                id="chose4"
+                                value="male"
+                              />
+                              <label for="chose4">اختيار 1</label>
+                            </div>
+                          </div>
+                          <hr />
+                          <div class="question">
+                            <h4><i class="icofont-circled-left"></i>السؤال2</h4>
+                            <input type="text" placeholder="اضافة اجابة" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="content_control text-center">
+              <div class="center_content">
+                <button class="btn">ارسال الامتحان</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-      <section id="main"></section>
     </main>
     <footer id="footer">
       <div class="footer-top">
@@ -150,13 +332,13 @@
     </footer>
     <a id="button" class="show" href="#"></a>
     <script src="assets/bootstrab/bootstrap.bundle.min.js"></script>
+    <script src="js/countdowns.js"></script>
     <script>
-      function show(s, d) {
-        document.getElementsByClassName("z")[0].classList.remove("z");
-        document.getElementsByClassName(s)[0].classList.add("z");
-        document.getElementsByClassName("active")[0].classList.remove("active");
-        document.getElementById(d).classList.add("active");
-      }
+      window.addEventListener("load", function () {
+        counter.init("demoB", 1200, function (idx) {
+          window.location.replace("end.php");
+        });
+      });
     </script>
   </body>
 </html>

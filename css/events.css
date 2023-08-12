@@ -1,0 +1,33 @@
+#main .container .row .col-md-4 .item h3,
+i {
+  display: inline-block;
+  font-size: 22px;
+  font-family: "Noto Kufi Arabic", sans-serif;
+}
+#main .container .row .col-md-4 .item {
+  box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+  border-radius: 16px;
+  padding: 10px;
+  margin: 19px;
+  background-color: var(--second_bg_color);
+}
+#main .container .row .col-md-4 {
+  padding: 0;
+}
+#main .container .row .col-md-4 .item h2,
+#main .container .row .col-md-4 i {
+  margin-left: 10px;
+  color: #0881a3;
+}
+#main .container .row .col-md-4 .item span {
+  display: inline-block;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: #0881a3;
+  color: #fff;
+  text-align: center;
+}
+#main .container .row .col-md-4 .item .d-flex {
+  justify-content: space-between;
+  align-items: center;
+}

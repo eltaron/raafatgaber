@@ -2,7 +2,7 @@
   width: 55%;
   background-color: #fefffa;
   text-align: center;
-  padding: 30px;
+  padding: 20px;
   margin: 30px auto;
 }
 @media (max-width: 992px) {
@@ -71,5 +71,6 @@
   }
   #auth .original-button {
     width: 60%;
+    padding: 20px 14px;
   }
 }

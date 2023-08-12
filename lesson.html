@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="assets/bootstrab/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/dash.css" />
+    <link rel="stylesheet" href="css/lesson.css" />
   </head>
   <body>
     <header>
@@ -79,7 +79,129 @@
       <section id="mainbg">
         <h2 class="text-center">الرئيسية</h2>
       </section>
-      <section id="main"></section>
+      <section id="main">
+        <div class="">
+          <div class="player" dir="ltr">
+            <video
+              class="video-screen"
+              preload="auto"
+              src="m.mp4"
+              type="video/mp4"
+              poster="images/How_to_become_a_teacher_612px.jpg"
+              msallowfullscreen
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowfullscreen
+            >
+              Sorry, your browser doesn't support HTML5 video playback.
+            </video>
+            <div class="controls active">
+              <button class="play start"></button>
+              <input
+                type="range"
+                class="volume-bar"
+                value="70"
+                min="0"
+                max="100"
+              />
+              <input type="range" class="time-bar" value="0" min="0" max="" />
+              <time class="time d-none d-md-block text-center">N/A</time>
+              <div class="speed text-center">
+                <select>
+                  <option value=".25">.25</option>
+                  <option value=".5">.5</option>
+                  <option value=".75">.75</option>
+                  <option value="1" selected>1</option>
+                  <option value="1.25">1.25</option>
+                  <option value="1.5">1.5</option>
+                  <option value="1.75">1.75</option>
+                  <option value="2">2</option>
+                </select>
+              </div>
+              <button class="fullscreen-button"></button>
+            </div>
+            <input class="file-chooser" type="hidden" />
+          </div>
+        </div>
+        <div class="container" style="margin-top: -15px">
+          <h2>الدرس الاول</h2>
+          <p class="mainp">
+            لغة الضاد اسماً يطلق على اللغة العربيّة، وذلك لاحتوائها على حرف
+            الضاد الذي لا تملكه أي لغة أخرى في العالم، وتحتوي على 28 حرفاً وتكتب
+            من اليمين إلى اليسار، ومن أعلى إلى أسفل، كما تعتبر اللغة
+          </p>
+          <hr />
+          <h2>تحميل الملف الخاص بالشرح</h2>
+          <a class="original-button" href="">تحميل</a>
+          <hr />
+          <h2>اضافة تعليق</h2>
+          <div class="comments" id="comments">
+            <div class="row">
+              <div class="col-12">
+                <form action="">
+                  <textarea
+                    name=""
+                    id=""
+                    rows="6"
+                    placeholder="اضافة تعليق"
+                  ></textarea>
+                  <button type="submit" class="original-button">تعليق</button>
+                </form>
+              </div>
+            </div>
+            <hr />
+            <h2>التعليقات</h2>
+            <div class="comment row pt-3">
+              <div class="col-12">
+                <div class="info d-flex">
+                  <h4><i class="fa-regular fa-user"></i> احمد محمد</h4>
+                  <h5><i class="fa-regular fa-clock"></i> منذ 3 دقائق</h5>
+                </div>
+              </div>
+              <div class="col-12">
+                <p class="p-1">
+                  لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية
+                  هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر.
+                  كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس
+                  عشر عندما قامت مطبعة مجهولة برص مجموعة من الأحرف بشكل عشوائي
+                  أخذتها من نص، لتكوّن كتيّب بمثابة دليل أو مرجع شكلي لهذه
+                  الأحرف. خمسة قرون من الزمن لم تقضي على هذا النص، بل انه حتى
+                  صار مستخدماً وبشكله الأصلي في الطباعة والتنضيد الإلكتروني.
+                  انتشر بشكل كبير في ستينيّات هذا القرن مع إصدار رقائق
+                  "ليتراسيت" (Letraset) البلاستيكية تحوي مقاطع من هذا النص، وعاد
+                  لينتشر مرة أخرى مؤخراَ مع ظهور برامج النشر الإلكتروني مثل
+                  "ألدوس بايج مايكر" (Aldus PageMaker) والتي حوت أيضاً على نسخ
+                  من نص لوريم إيبسوم.
+                </p>
+              </div>
+            </div>
+            <div class="comment row pt-3">
+              <div class="col-12">
+                <div class="info d-flex">
+                  <h4><i class="fa-regular fa-user"></i> احمد محمد</h4>
+                  <h5><i class="fa-regular fa-clock"></i> منذ 3 دقائق</h5>
+                </div>
+              </div>
+              <div class="col-12">
+                <p class="p-1">
+                  لوريم إيبسوم(Lorem Ipsum) هو ببساطة نص شكلي (بمعنى أن الغاية
+                  هي الشكل وليس المحتوى) ويُستخدم في صناعات المطابع ودور النشر.
+                  كان لوريم إيبسوم ولايزال المعيار للنص الشكلي منذ القرن الخامس
+                  عشر عندما قامت مطبعة مجهولة برص مجموعة من الأحرف بشكل عشوائي
+                  أخذتها من نص، لتكوّن كتيّب بمثابة دليل أو مرجع شكلي لهذه
+                  الأحرف. خمسة قرون من الزمن لم تقضي على هذا النص، بل انه حتى
+                  صار مستخدماً وبشكله الأصلي في الطباعة والتنضيد الإلكتروني.
+                  انتشر بشكل كبير في ستينيّات هذا القرن مع إصدار رقائق
+                  "ليتراسيت" (Letraset) البلاستيكية تحوي مقاطع من هذا النص، وعاد
+                  لينتشر مرة أخرى مؤخراَ مع ظهور برامج النشر الإلكتروني مثل
+                  "ألدوس بايج مايكر" (Aldus PageMaker) والتي حوت أيضاً على نسخ
+                  من نص لوريم إيبسوم.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer id="footer">
       <div class="footer-top">
@@ -150,13 +272,6 @@
     </footer>
     <a id="button" class="show" href="#"></a>
     <script src="assets/bootstrab/bootstrap.bundle.min.js"></script>
-    <script>
-      function show(s, d) {
-        document.getElementsByClassName("z")[0].classList.remove("z");
-        document.getElementsByClassName(s)[0].classList.add("z");
-        document.getElementsByClassName("active")[0].classList.remove("active");
-        document.getElementById(d).classList.add("active");
-      }
-    </script>
+    <script src="js/video.js"></script>
   </body>
 </html>

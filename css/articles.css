@@ -1,0 +1,25 @@
+#main .container .row {
+  margin: 36px;
+}
+#main .container .row .col-md-3 img {
+  width: 100%;
+  box-shadow: 0px 2px 20px 5px rgb(198 221 227);
+  border-radius: 5px;
+}
+#main .container .row .col-md-9 {
+  background-color: #7db2c070;
+  border-radius: 10px;
+  padding: 15px;
+}
+#main .container .row .col-md-9 button {
+  border-color: #0881a3;
+  border-radius: 5px;
+  padding: 4px;
+  color: #115f88;
+  transition: transform 0.5s, opacity 0.5s;
+}
+#main .container .row .col-md-9 button:hover {
+  transform: scale(1.05);
+  background-color: #0881a3;
+  color: aliceblue;
+}

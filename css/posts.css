@@ -3,6 +3,7 @@ article {
   border-radius: 30px;
   margin: 25px 0;
   padding-bottom: 30px;
+  box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
 }
 article h3 {
   color: var(--first_color);
@@ -72,4 +73,30 @@ textarea {
 }
 #comments {
   transition: 0.5s ease-in-out;
+}
+.carousel-item img {
+  height: 100%;
+}
+.carousel-indicators [data-bs-target] {
+  background-color: var(--colorfour);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.carousel-caption {
+  bottom: 33%;
+  background-color: var(--second_bg_color);
+  padding: 60px 0;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: none;
+  width: 60px;
+  height: 60px;
+}
+.carousel-control-next-icon {
+  background-image: url("../images/icons/right-arrow.png");
+}
+.carousel-control-prev-icon {
+  background-image: url("../images/icons/left-arrow.png");
 }
